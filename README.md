@@ -1,20 +1,25 @@
 # RoboFriends
 
+\
+***See the app here:*** *https://realface-24.github.io/robofriends/*
+
 Welcome to **RoboFriends**, a fun React application that displays a list of robot friends fetched from a public API. Users can search through the list of robots by name. This project is built using React, showcasing components, state management, and API integration.
 
 ## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Testing](#testing)
-- [Performance Monitoring](#performance-monitoring)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+
+- Features
+- Installation
+- Usage
+- Project Structure
+- Technologies Used
+- Testing
+- Performance Monitoring
+- Contributing
+- License
+- Contact
 
 ## Features
+
 - Fetch and display a list of robots from a public API.
 - Search functionality to filter robots by name.
 - Responsive and styled cards for each robot.
@@ -24,29 +29,36 @@ Welcome to **RoboFriends**, a fun React application that displays a list of robo
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/RealFace-24/robofriends.git
    ```
 2. Navigate to the project directory:
+
    ```bash
    cd robofriends
    ```
 3. Install the dependencies:
+
    ```bash
    npm install
    ```
 4. Start the development server:
+
    ```bash
    npm start
    ```
+
    The app will be available at `http://localhost:3000`.
 
 ## Usage
+
 - Once the app is running, you will see a list of robot friends.
 - Use the search box to filter the robots by typing their names.
 - The list is scrollable, and each robot card includes an image, name, and email.
 
 ## Project Structure
+
 - `public/`: Contains static assets like the favicon and index.html.
 - `src/`: Contains the source code.
   - `components/`: React components like `Card`, `CardList`, `SearchBox`, and `Scroll`.
@@ -61,6 +73,7 @@ Welcome to **RoboFriends**, a fun React application that displays a list of robo
 - `package-lock.json`: Lock file for dependency versions.
 
 ## Technologies Used
+
 - **React**: For building the user interface.
 - **React Scripts**: For development and build tools.
 - **Tachyons**: CSS framework for styling.
@@ -69,21 +82,29 @@ Welcome to **RoboFriends**, a fun React application that displays a list of robo
 - **Web Vitals**: For performance monitoring.
 
 ## Testing
+
 This project includes a basic testing setup with Jest and `@testing-library/jest-dom`. To run tests, use:
+
 ```bash
 npm test
 ```
+
 You can extend the tests by adding more test cases in the `src` directory.
 
 ## Performance Monitoring
+
 The `reportWebVitals.js` file allows you to measure performance metrics (e.g., CLS, FID, LCP, FCP, TTFB). To log results to the console, modify `index.js` to include:
+
 ```javascript
 reportWebVitals(console.log);
 ```
-For analytics, you can send the data to an endpoint—see [CRA-vitals](https://bit.ly/CRA-vitals) for more details.
+
+For analytics, you can send the data to an endpoint—see CRA-vitals for more details.
 
 ## Contributing
+
 Contributions are welcome! Please follow these steps:
+
 1. Fork the repository.
 2. Create a new branch: `git checkout -b feature-name`.
 3. Make your changes and commit: `git commit -m "Add feature-name"`.
@@ -91,7 +112,9 @@ Contributions are welcome! Please follow these steps:
 5. Submit a pull request.
 
 ## License
-This project is open-source and available under the [MIT License](LICENSE).
+
+This project is open-source and available under the MIT License.
 
 ## Contact
-For questions or feedback, please reach out to [RealFace-24](https://github.com/RealFace-24) on GitHub.
+
+For questions or feedback, please reach out to RealFace-24 on GitHub.
