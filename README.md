@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# RoboFriends
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **RoboFriends**, a fun React application that displays a list of robot friends fetched from a public API. Users can search through the list of robots by name. This project is built using React, showcasing components, state management, and API integration.
 
-## Available Scripts
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Performance Monitoring](#performance-monitoring)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-In the project directory, you can run:
+## Features
+- Fetch and display a list of robots from a public API.
+- Search functionality to filter robots by name.
+- Responsive and styled cards for each robot.
+- Scrollable container for a large number of robots.
+- Custom font styling for a unique look.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/RealFace-24/robofriends.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd robofriends
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+   The app will be available at `http://localhost:3000`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+- Once the app is running, you will see a list of robot friends.
+- Use the search box to filter the robots by typing their names.
+- The list is scrollable, and each robot card includes an image, name, and email.
 
-### `npm test`
+## Project Structure
+- `public/`: Contains static assets like the favicon and index.html.
+- `src/`: Contains the source code.
+  - `components/`: React components like `Card`, `CardList`, `SearchBox`, and `Scroll`.
+  - `containers/`: Contains the main `App.js` component.
+  - `App.css`: Styles for the application, including a custom font.
+  - `index.css`: Global styles for the body, including a gradient background.
+  - `index.js`: Entry point for the React application.
+  - `reportWebVitals.js`: Utility for measuring web performance metrics.
+  - `setupTests.js`: Configuration for Jest testing with jest-dom.
+  - `robots.js`: Local array of robot data (used as a fallback or example).
+- `package.json`: Project configuration and dependencies.
+- `package-lock.json`: Lock file for dependency versions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
+- **React**: For building the user interface.
+- **React Scripts**: For development and build tools.
+- **Tachyons**: CSS framework for styling.
+- **JSONPlaceholder API**: Public API for fetching robot data.
+- **Jest & Testing Library**: For unit testing.
+- **Web Vitals**: For performance monitoring.
 
-### `npm run build`
+## Testing
+This project includes a basic testing setup with Jest and `@testing-library/jest-dom`. To run tests, use:
+```bash
+npm test
+```
+You can extend the tests by adding more test cases in the `src` directory.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Performance Monitoring
+The `reportWebVitals.js` file allows you to measure performance metrics (e.g., CLS, FID, LCP, FCP, TTFB). To log results to the console, modify `index.js` to include:
+```javascript
+reportWebVitals(console.log);
+```
+For analytics, you can send the data to an endpoint—see [CRA-vitals](https://bit.ly/CRA-vitals) for more details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-name`.
+3. Make your changes and commit: `git commit -m "Add feature-name"`.
+4. Push to the branch: `git push origin feature-name`.
+5. Submit a pull request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
+This project is open-source and available under the [MIT License](LICENSE).
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+For questions or feedback, please reach out to [RealFace-24](https://github.com/RealFace-24) on GitHub.
